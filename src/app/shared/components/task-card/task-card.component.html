@@ -1,0 +1,9 @@
+<mat-card class="task-card">
+  <mat-card-title>{{ title }}</mat-card-title>
+  <mat-card-content>
+    <p class="task-desc">{{ description }}</p>
+    <div class="task-footer">
+      <small class="due-date">Fecha límite: {{ dueDate | date }}</small>
+    </div>
+  </mat-card-content>
+</mat-card>

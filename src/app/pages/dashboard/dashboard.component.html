@@ -1,0 +1,11 @@
+<h2 class="text-2xl font-bold mb-4">Mis Tareas</h2>
+
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  <app-task-card
+    *ngFor="let task of tasks"
+    [title]="task.title"
+    [description]="task.description"
+    [dueDate]="task.dueDate"
+  >
+  </app-task-card>
+</div>
